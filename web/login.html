@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-200 flex-col 
+            bg-gradient-to-r from-red-200 via-red to-blue-200 text-sm">
+    <div class=" p-6 rounded shadow-md w-80 flex flex-col gap-4">
+        <h1 class="font-bold text-center text-2xl">Log in</h1>
+        <div>
+            <label for="email" class="">Email</label><br>
+            <input type="email" id="email" name="email" class="p-2 border border-2 border-blue-300 outline-none rounded w-full" placeholder="Enter email">
+            
+        </div>
+        <div class="relative">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="p-2 border border-2 border-blue-300 outline-none rounded w-full" placeholder="Enter password">
+            <button id="togglePassword" type="button" class="absolute right-2 top-8 text-gray-500 hover:text-gray-800">👁</button>
+            
+        </div>
+        <button type="submit" class="border bg-blue-600 rounded text-white p-3 mt-2">Log in</button>
+        <p class="text-center text-xs">Didn't have an account? <a class="p-2 hover:text-blue-600 hover:underline transition-all duration-200" href="signup.html">Sign up</a></p>
+        
+    </div>
+
+    <script>
+    const password = document.getElementById("password");
+    const toggle = document.getElementById("togglePassword");
+
+    toggle.addEventListener("click", () => {
+    const type = password.type === "password" ? "text" : "password";
+    password.type = type;
+    });
+    </script>
+
+</body>
+</html>

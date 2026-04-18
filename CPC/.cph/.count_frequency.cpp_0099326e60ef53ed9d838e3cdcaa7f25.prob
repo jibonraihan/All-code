@@ -1,0 +1,1 @@
+{"name":"Local: count_frequency","url":"f:\\Program\\CPC\\count_frequency.cpp","tests":[{"id":1746217352603,"input":"7\n1 2 2 3 1 4 2","output":"1 occurs 2 times\n2 occurs 3 times\n3 occurs 1 times\n4 occurs 1 times"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\CPC\\count_frequency.cpp","group":"local","local":true}

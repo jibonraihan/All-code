@@ -1,0 +1,1 @@
+{"name":"Local: insert_multiple_element","url":"f:\\Program\\CPC\\insert_multiple_element.cpp","tests":[{"id":1746113424142,"input":"5\n2 4 6 8 10\n3\n1 5 7","output":"1 2 4 5 6 7 8 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\CPC\\insert_multiple_element.cpp","group":"local","local":true}

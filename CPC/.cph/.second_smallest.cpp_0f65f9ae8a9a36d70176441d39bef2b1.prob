@@ -1,0 +1,1 @@
+{"name":"Local: second_smallest","url":"f:\\Program\\CPC\\second_smallest.cpp","tests":[{"id":1746286082383,"input":"6  \n20 5 10 8 30 25","output":"8"},{"id":1746291583900,"input":"8\n3 4 5 3 9 7 4 12","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\CPC\\second_smallest.cpp","group":"local","local":true}

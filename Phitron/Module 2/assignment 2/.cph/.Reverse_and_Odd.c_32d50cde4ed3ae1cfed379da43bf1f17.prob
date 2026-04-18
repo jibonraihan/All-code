@@ -1,0 +1,1 @@
+{"name":"Local: Reverse_and_Odd","url":"f:\\Program\\Phitron\\Module 2\\assignment 2\\Reverse_and_Odd.c","tests":[{"id":1744976189901,"input":"5\n10 20 30 40 50","output":"40 20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\Phitron\\Module 2\\assignment 2\\Reverse_and_Odd.c","group":"local","local":true}

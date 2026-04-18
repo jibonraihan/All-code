@@ -1,0 +1,1 @@
+{"name":"Local: prime_number_in_range","url":"f:\\Program\\C Program\\prime_number_in_range.c","tests":[{"id":1745784229040,"input":"1\n100","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\C Program\\prime_number_in_range.c","group":"local","local":true}

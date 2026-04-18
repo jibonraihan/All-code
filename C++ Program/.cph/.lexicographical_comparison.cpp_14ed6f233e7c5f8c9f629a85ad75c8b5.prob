@@ -1,0 +1,1 @@
+{"name":"Local: lexicographical_comparison","url":"f:\\Program\\C++ Program\\lexicographical_comparison.cpp","tests":[{"id":1757748469387,"input":"AbcDea\nbBCde","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\C++ Program\\lexicographical_comparison.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: sum_of_1s_series","url":"f:\\Program\\CPC\\sum_of_1s_series.cpp","tests":[{"id":1745165672764,"input":"3","output":"123"},{"id":1745165679427,"input":"5","output":"12345"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\CPC\\sum_of_1s_series.cpp","group":"local","local":true}

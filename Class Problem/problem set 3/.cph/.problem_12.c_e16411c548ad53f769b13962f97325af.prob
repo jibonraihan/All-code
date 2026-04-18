@@ -1,0 +1,1 @@
+{"name":"Local: problem_12","url":"f:\\Program\\Class Problem\\problem set 3\\problem_12.c","tests":[{"id":1751805171078,"input":"12 56","output":""},{"id":1762874081112,"input":"56 112","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\Class Problem\\problem set 3\\problem_12.c","group":"local","local":true}

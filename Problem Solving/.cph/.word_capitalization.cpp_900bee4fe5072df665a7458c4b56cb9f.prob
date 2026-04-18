@@ -1,0 +1,1 @@
+{"name":"Local: word_capitalization","url":"f:\\Program\\Problem Solving\\word_capitalization.cpp","tests":[{"id":1746559216618,"input":"ApPLe","output":"ApPLe"},{"id":1746559251499,"input":"konjac","output":"Konjac"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\Problem Solving\\word_capitalization.cpp","group":"local","local":true}

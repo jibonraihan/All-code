@@ -1,0 +1,1 @@
+{"name":"Local: N_factorial","url":"f:\\Program\\CPC\\N_factorial.cpp","tests":[{"id":1745165021121,"input":"5","output":"120"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\CPC\\N_factorial.cpp","group":"local","local":true}

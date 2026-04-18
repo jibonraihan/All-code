@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex">
+    
+    <div id="sidebar" class="hidden md:flex bg-blue-200 flex flex-col w-56 text-center h-screen p-3 gap-3">
+        <div class="text-white font-bold">My Dashboard</div>
+        <a href="" class="mt-4 hover:bg-blue-300 hover:font-bold mx-4 p-2 rounded-[10px]">Home</a>
+        <a href="" class="mt-4 hover:bg-blue-300 hover:font-bold mx-4 p-2 rounded-[10px]">Profile</a>
+        <a href="" class="mt-4 hover:bg-blue-300 hover:font-bold mx-4 p-2 rounded-[10px]">Settings</a>
+        <a href="" class="mt-4 hover:bg-blue-300 hover:font-bold mx-4 p-2 rounded-[10px]">Analytics</a>
+        <a href="" class="mt-4 hover:bg-blue-300 hover:font-bold mx-4 p-2 rounded-[10px]">Logout</a>
+    </div>
+    <div>
+        <button id="btn" class="md:hidden ml-4 mt-4 text-2xl"> ☰</button>
+        <div class="flex shadow-hg border-gray-600 justify-between">
+            <p class="ml-4 font-bold">Dashboard</p>
+            <p class="absolute right-2">Welcome, user <button class="p-1 border rounded bg-blue-800 font-bold text-white hover:bg-blue-900">Logout</button></p>
+            
+        </div>
+    </div>
+
+    <div class="flex">
+        <div>User</div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const sidebar = document.getElementById('sidebar');
+
+        btn.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+        });
+    </script>
+    
+</body>
+</html>

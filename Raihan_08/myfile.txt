@@ -1,0 +1,4 @@
+Again..Hello Raihan!
+This is Java File handling.
+I can read this file.
+And also I can write on it.

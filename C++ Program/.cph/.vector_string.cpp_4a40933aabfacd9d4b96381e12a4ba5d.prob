@@ -1,0 +1,1 @@
+{"name":"Local: vector_string","url":"f:\\Program\\C++ Program\\vector_string.cpp","tests":[{"id":1753614198697,"input":"5\nrakib ahamed\nSakib khan\nAbir hasan\nTanvir rahman\nKanon","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\C++ Program\\vector_string.cpp","group":"local","local":true}

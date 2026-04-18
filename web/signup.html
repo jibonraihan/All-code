@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-200 flex-col 
+            bg-gradient-to-r from-blue-200 via-white to-blue-200 text-sm">
+    <div class="p-6 rounded shadow-md w-80 flex flex-col gap-3">
+        <h1 class="font-bold text-center text-2xl">Sign up</h1>
+        <div class="">
+            <label for="name" class="">First name</label>
+            <input type="name" id="name" name="name" 
+            class="p-2 border border-2 border-blue-300 outline-none rounded w-full" 
+            placeholder="Enter first name">
+            
+        </div>
+           <div>
+            <label for="name" class="">Last name</label><label for="" 
+            class=""> (optional)</label>
+            <input type="name" id="name" name="name" 
+            class="p-2 border border-2 border-blue-300 outline-none rounded w-full" 
+            placeholder="Enter last name">
+            
+        </div>
+         <div>
+            <label for="email" class="">Email</label>
+            <input type="email" id="email" name="email" 
+            class="p-2 border border-2 border-blue-300 outline-none rounded w-full" 
+            placeholder="Enter email">
+        </div>
+
+        <div class="relative">
+            <label for="password"> New password</label>
+            <input type="password" id="password" 
+            name="password" 
+            class="p-2 border border-2 border-blue-300 outline-none rounded w-full" 
+            placeholder="Enter a password">
+            <button id="togglePassword" type="button" 
+            class="absolute right-2 top-8 text-gray-500 hover:text-gray-800">👁
+            </button>
+        </div>
+
+        <div class="relative">
+            <label for="password2" class="">Confirm new password</label>
+            <input type="password" id="password2" 
+            name="password" 
+            class="p-2 border border-2 border-blue-300 outline-none rounded w-full" 
+            placeholder="Confirm new password">
+            <button id="togglePassword2" type="button2" 
+            class="absolute right-2 top-8 text-gray-500 hover:text-gray-800">👁
+            </button>
+        </div>
+        
+        <p class="text-xs">
+            <label for="">
+                <input type="checkbox" name="" id="" 
+                class="w-5 h-3 rounded border-grey-400 accent-green-600">
+            </label>
+            By signing up, you agree to our 
+            <a href="#" class="text-blue-600 hover:underline">
+                Terms of Service</a> and <a href="#" class="text-blue-600 hover:underline">
+                    Privacy Policy</a>.
+        </p>
+
+        <button type="submit" 
+        class="border bg-blue-600 rounded text-white p-3">Sign up</button>
+        <p class="text-center text-xs">Already have an account? 
+            <a class="p-2 hover:text-blue-600 hover:underline transition-all duration-200" href="login.html">log in</a></p>
+        
+    </div>
+
+    <script>
+  const password = document.getElementById("password");
+  const toggle = document.getElementById("togglePassword");
+  const password2 = document.getElementById("password2");
+  const toggle2 = document.getElementById("togglePassword2");
+
+  toggle.addEventListener("click", () => {
+    const type = password.type === "password" ? "text" : "password";
+    password.type = type;
+  });
+
+  toggle2.addEventListener("click", () => {
+    const type2 = password2.type === "password" ? "text" : "password";
+    password2.type = type2;
+  });
+</script>
+
+</body>
+</html>

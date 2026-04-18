@@ -1,0 +1,1 @@
+{"name":"Local: find_unique","url":"f:\\Program\\C++ Program\\find_unique.cpp","tests":[{"id":1746357866631,"input":"6\n2 3 4 3 5 4","output":"2 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Program\\C++ Program\\find_unique.cpp","group":"local","local":true}

@@ -52,13 +52,18 @@ th { background:#eee; cursor:pointer; }
 <div class="container">
   <h1>Student Info Table</h1>
 
-  <input type="text" id="searchBox" placeholder="Search by ID or Name" oninput="filterTable()">
+  <input 
+    type="text" 
+    id="searchBox" 
+    placeholder="Search by ID or Name" 
+    oninput="filterTable()"
+  >
 
-  <table>
+  <table id="studentTable">
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Name</th>
+        <th onclick="sortTable(0)">ID ▲▼</th>
+        <th onclick="sortTable(1)">Name ▲▼</th>
         <th>Mobile</th>
         <th>Address</th>
         <th>Blood</th>
@@ -67,35 +72,41 @@ th { background:#eee; cursor:pointer; }
         <th>Handle</th>
       </tr>
     </thead>
+
     <tbody id="tbody"></tbody>
   </table>
 
   <p class="not-found" id="notFound">Student not available</p>
 </div>
 
+<!-- JS MUST be here -->
 <script>
 
 let students = [];
+let filteredStudents = [];
 
-fetch("students.json")
+// Load JSON
+fetch("./students.json")
 .then(res => {
-    if(!res.ok) throw new Error("JSON not found");
+    if (!res.ok) throw new Error("JSON not found");
     return res.json();
 })
 .then(data => {
     students = data;
-    display(students);
+    filteredStudents = data;
+    display(filteredStudents);
 })
 .catch(err => {
     console.error(err);
     document.getElementById("notFound").style.display = "block";
 });
 
+// Display table
 function display(data) {
     const tbody = document.getElementById("tbody");
     tbody.innerHTML = "";
 
-    if(data.length === 0) {
+    if (data.length === 0) {
         document.getElementById("notFound").style.display = "block";
         return;
     }
@@ -110,22 +121,46 @@ function display(data) {
             <td>${s.mobile}</td>
             <td>${s.address}</td>
             <td>${s.blood}</td>
-            <td><a href="${s.fb_link}" target="_blank">Link</a></td>
+            <td>${s.fb_link !== "Not available" ? `<a href="${s.fb_link}" target="_blank">Link</a>` : "Not available"}</td>
             <td>${s.email}</td>
             <td>${s.handle}</td>
         </tr>`;
     });
 }
 
+// Search filter
 function filterTable() {
-    let val = document.getElementById("searchBox").value.toLowerCase();
+    let val = document.getElementById("searchBox").value.trim().toLowerCase();
 
-    let filtered = students.filter(s =>
-        s.name.toLowerCase().includes(val) ||
-        s.id.toString().includes(val)
-    );
+    if (val === "") {
+        filteredStudents = students;
+    } else {
+        filteredStudents = students.filter(s =>
+            s.name.toLowerCase().includes(val) ||
+            s.id.toString().includes(val)
+        );
+    }
 
-    display(filtered);
+    display(filteredStudents);
+}
+
+// Sort
+let sortState = { col: null, asc: true };
+
+function sortTable(colIndex) {
+    const asc = (sortState.col === colIndex) ? !sortState.asc : true;
+    sortState = { col: colIndex, asc };
+
+    filteredStudents.sort((a, b) => {
+        let valA = colIndex === 0 ? a.id : a.name.toLowerCase();
+        let valB = colIndex === 0 ? b.id : b.name.toLowerCase();
+
+        if (valA < valB) return asc ? -1 : 1;
+        if (valA > valB) return asc ? 1 : -1;
+        return 0;
+    });
+
+    display(filteredStudents);
 }
 
 </script>

@@ -1,0 +1,34 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains / IntelliJ
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# C/C++
+*.exe
+*.out
+*.o
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Metadata
+.metadata/
+
+# Large images (optional)
+# *.jpg
+# *.png

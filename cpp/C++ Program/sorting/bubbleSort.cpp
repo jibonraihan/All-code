@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//bubble sort
 void bubbleSort(int arr[], int n)
 {
     bool isSwap;
